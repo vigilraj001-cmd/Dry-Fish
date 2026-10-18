@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvai Dry Fish — Premium Salt-Cured & Sun-Dried Fish, Pollachi</title>
+    <meta name="description" content="Order the finest chemical-free, sun-dried fish from Suvai Dry Fish, Pollachi. Owned by Iqbal. Gandhi Market Road, near Railway Bus Stop, Coimbatore 642006.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<header class="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="brand-logo">
+            <svg width="34" height="34" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="8" fill="url(#brandGrad)"/>
+                <path d="M6 16C9 12 14 11 19 13C22 11.5 24.5 12.5 26 14C24.5 15.5 22 16.5 19 15C14 17 9 16 6 16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="22" cy="14" r="1" fill="#f59e0b"/>
+                <defs><linearGradient id="brandGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#0f172a"/><stop offset="1" stop-color="#0284c7"/></linearGradient></defs>
+            </svg>
+            <span class="brand-name-text">Suvai<span> Dry Fish</span></span>
+        </a>
+        <nav class="nav-links">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#promo" class="nav-link">Featured</a>
+            <a href="#catalog" class="nav-link">Shop</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button onclick="toggleCart()" class="cart-trigger" aria-label="Open Shopping Basket">
+                <i class="fas fa-shopping-basket"></i>
+                <span class="cart-badge-num hidden" id="cart-badge">0</span>
+            </button>
+            <a href="tel:9361480769" class="btn btn-secondary" style="padding:10px 18px;font-size:0.9rem;">
+                <i class="fas fa-phone-alt" style="color:var(--primary-gold)"></i> Call Iqbal
+            </a>
+            <button class="mobile-nav-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero" class="hero-section">
+    <div class="container hero-grid">
+        <div class="hero-content reveal">
+            <span class="section-badge">Premium Quality Curing</span>
+            <h1 class="hero-title">Sun-Dried, Salt-Cured <span>Ocean-Fresh Taste</span></h1>
+            <p class="hero-description">
+                Hand-selected fresh catches, cured using clean sea salt and naturally sun-dried in hygienic environments. Direct from Pollachi, Coimbatore — straight to your kitchen.
+            </p>
+            <div class="hero-features">
+                <div class="hero-feature-item">
+                    <div class="hero-feature-icon"><i class="fas fa-leaf"></i></div>
+                    <span class="hero-feature-text">100% Organic</span>
+                </div>
+                <div class="hero-feature-item">
+                    <div class="hero-feature-icon"><i class="fas fa-ban"></i></div>
+                    <span class="hero-feature-text">Zero Chemicals</span>
+                </div>
+                <div class="hero-feature-item">
+                    <div class="hero-feature-icon"><i class="fas fa-sun"></i></div>
+                    <span class="hero-feature-text">Clean Sun Drying</span>
+                </div>
+                <div class="hero-feature-item">
+                    <div class="hero-feature-icon"><i class="fas fa-truck"></i></div>
+                    <span class="hero-feature-text">Home Delivery</span>
+                </div>
+            </div>
+            <div class="hero-ctas">
+                <a href="#catalog" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Shop Catalog</a>
+                <a href="#about" class="btn btn-secondary">Learn Our Process</a>
+            </div>
+        </div>
+        <div class="hero-image-wrap reveal">
+            <div class="hero-image-frame">
+                <img src="assets/hero_banner.png" alt="Assorted premium dry fishes with spices and sea salt">
+            </div>
+            <div class="hero-image-badge">
+                <i class="fas fa-award"></i>
+                <div class="badge-text">
+                    <div class="badge-text-title">Guaranteed Quality</div>
+                    <div class="badge-text-desc">Cleaned & Hygienically Packed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ FEATURED SLIDER ═══ -->
+<section id="promo" class="promo-section container">
+    <div class="section-title-wrap reveal">
+        <span class="section-badge">Weekly Specials</span>
+        <h2 class="section-title">Signature <span>Dry Fish Varieties</span></h2>
+        <p class="section-subtitle">Our most sought-after premium items — dried with extreme care, loved by families and chefs alike.</p>
+    </div>
+    <div class="slider-container reveal">
+        <!-- Slide 1: Vanjaram -->
+        <div class="promo-slide active">
+            <div class="slide-img">
+                <img src="assets/hero_banner.png" alt="Vanjaram Dry Fish">
+                <span class="slide-badge">King of Dry Fish</span>
+            </div>
+            <div class="slide-content">
+                <span class="slide-tag">👑 Customer Favourite</span>
+                <h3 class="slide-title">Premium Vanjaram</h3>
+                <span class="slide-tamil">வஞ்சரம் கருவாடு — Dried Seer Fish</span>
+                <p class="slide-desc">Top-grade kingfish slices cured with mineral-rich salt. Thick meaty texture, minimal bones, and an exceptional rich flavour that elevates karuvadu gravies.</p>
+                <div class="slide-price-row">
+                    <div class="slide-price">₹980 <span>/ 1 kg</span></div>
+                    <button onclick="quickBuy('vanjaram')" class="btn btn-primary">Add to Basket <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 2: Paalsura -->
+        <div class="promo-slide">
+            <div class="slide-img">
+                <img src="assets/paalsura.png" alt="Paalsura Dry Fish">
+                <span class="slide-badge">Highly Nutritious</span>
+            </div>
+            <div class="slide-content">
+                <span class="slide-tag">🍼 Traditional Remedy</span>
+                <h3 class="slide-title">Paalsura Dry Fish</h3>
+                <span class="slide-tamil">பால்சுறா கருவாடு — Dried Shark</span>
+                <p class="slide-desc">Boneless dried shark chunks. Famous for multiple health benefits and high protein value. Base ingredient for authentic Sura Puttu.</p>
+                <div class="slide-price-row">
+                    <div class="slide-price">₹1000 <span>/ 1 kg</span></div>
+                    <button onclick="quickBuy('paalsura')" class="btn btn-primary">Add to Basket <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 3: Big Prawn -->
+        <div class="promo-slide">
+            <div class="slide-img">
+                <img src="assets/prawn.png" alt="Big Prawn Dry Fish">
+                <span class="slide-badge">Premium Shellfish</span>
+            </div>
+            <div class="slide-content">
+                <span class="slide-tag">🔥 Umami Bomb</span>
+                <h3 class="slide-title">Big Prawn Dry Fish</h3>
+                <span class="slide-tamil">பெரிய இறால் கருவாடு — Dried Prawns</span>
+                <p class="slide-desc">Fleshy, sweet, jumbo sun-dried prawns. Cleaned and shelled prior to drying. Adds intense, rich savory depth to fries, rice, and traditional thokkus.</p>
+                <div class="slide-price-row">
+                    <div class="slide-price">₹650 <span>/ 1 kg</span></div>
+                    <button onclick="quickBuy('big-prawn')" class="btn btn-primary">Add to Basket <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 4: Nethili -->
+        <div class="promo-slide">
+            <div class="slide-img">
+                <img src="assets/nethili.png" alt="Nethili Dry Fish">
+                <span class="slide-badge">Best Seller</span>
+            </div>
+            <div class="slide-content">
+                <span class="slide-tag">⭐ Most Popular</span>
+                <h3 class="slide-title">Nethili Dry Fish</h3>
+                <span class="slide-tamil">நெத்திலி கருவாடு — Dried Anchovies</span>
+                <p class="slide-desc">Premium sun-dried anchovies. Very clean, crispy when deep-fried, and highly mineral-rich. A staple in every South Indian kitchen.</p>
+                <div class="slide-price-row">
+                    <div class="slide-price">₹550 <span>/ 1 kg</span></div>
+                    <button onclick="quickBuy('nethili')" class="btn btn-primary">Add to Basket <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <button class="slider-arrow arrow-prev" onclick="moveSlide(-1)" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-arrow arrow-next" onclick="moveSlide(1)" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="slider-dots">
+        <span class="slider-dot active" onclick="setSlide(0)"></span>
+        <span class="slider-dot" onclick="setSlide(1)"></span>
+        <span class="slider-dot" onclick="setSlide(2)"></span>
+        <span class="slider-dot" onclick="setSlide(3)"></span>
+    </div>
+</section>
+
+<!-- ═══ CATALOG ═══ -->
+<section id="catalog" class="catalog-section container">
+    <div class="section-title-wrap reveal">
+        <span class="section-badge">Shop Store</span>
+        <h2 class="section-title">Browse Our <span>Complete Catalog</span></h2>
+        <p class="section-subtitle">18 varieties of premium salt-dried fish. Clean, scale-free, and packed for freshness.</p>
+    </div>
+    <div class="catalog-controls reveal">
+        <div class="search-sort-row">
+            <div class="search-bar-wrap">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" class="search-input" placeholder="Search fish (e.g. Nethili, Prawn, Vanjaram…)">
+            </div>
+            <div class="sort-wrap">
+                <select id="sort-select" class="sort-select" aria-label="Sort products">
+                    <option value="default">Sort: Default</option>
+                    <option value="price-asc">Price: Low → High</option>
+                    <option value="price-desc">Price: High → Low</option>
+                    <option value="name-asc">Name: A → Z</option>
+                </select>
+            </div>
+        </div>
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-category="all">🍽️ All (18)</button>
+            <button class="filter-btn" data-category="premium">💎 Premium Steaks</button>
+            <button class="filter-btn" data-category="small-fish">🐟 Small Fish</button>
+            <button class="filter-btn" data-category="shellfish">🦐 Shellfish</button>
+            <button class="filter-btn" data-category="budget">💰 Daily Value</button>
+        </div>
+    </div>
+    <div class="product-grid" id="product-grid">
+        <!-- Rendered by app.js -->
+    </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="about-section container">
+    <div class="about-grid">
+        <div class="about-image-wrap reveal">
+            <img src="assets/nethili.png" alt="Premium clean sun-dried anchovies — Suvai Dry Fish quality">
+        </div>
+        <div class="about-content reveal">
+            <span class="section-badge">About Suvai Dry Fish</span>
+            <h3 style="font-size:2rem;margin-bottom:20px;">Hygienic Curing, <span style="color:var(--primary-gold)">Traditional Craft</span></h3>
+            <p>For years, <strong>Suvai Dry Fish</strong> has been supplying premium dried seafood to families across Coimbatore district. Founded by <strong>Iqbal</strong>, our shop stands out for uncompromised focus on chemical-free preparation.</p>
+            <p>Unlike mass-produced commercial dry fish treated with heavy chemical preservatives, our products are completely organic. We wash each catch in fresh clean water, slice evenly, salt with natural rock-salt, and dry on elevated, clean bamboo mesh frames under the open sun.</p>
+            <div class="about-highlights">
+                <div class="about-highlight-item">
+                    <div class="about-highlight-icon"><i class="fas fa-heart"></i></div>
+                    <div class="about-highlight-text">
+                        <h4>Sea Salt Cured Only</h4>
+                        <p>Zero chemicals, food dyes, or artificial powders. Clean, high-grade organic sea salt is our only preservative.</p>
+                    </div>
+                </div>
+                <div class="about-highlight-item">
+                    <div class="about-highlight-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="about-highlight-text">
+                        <h4>Elevated Drying Platforms</h4>
+                        <p>All fish dried on clean, elevated bamboo racks protected from ground dust, pests, and insects.</p>
+                    </div>
+                </div>
+                <div class="about-highlight-item">
+                    <div class="about-highlight-icon"><i class="fas fa-thumbs-up"></i></div>
+                    <div class="about-highlight-text">
+                        <h4>Quality Inspected by Iqbal</h4>
+                        <p>Every batch personally inspected by the owner. If it doesn't pass our standards, it doesn't leave the shop.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="contact-section container">
+    <div class="section-title-wrap reveal">
+        <span class="section-badge">Get in Touch</span>
+        <h2 class="section-title">Store Location <span>&amp; Contact</span></h2>
+        <p class="section-subtitle">Need bulk orders or custom cuts? Visit our shop or call Iqbal directly.</p>
+    </div>
+    <div class="contact-grid reveal">
+        <div class="contact-card glass-card">
+            <div>
+                <h3 style="margin-bottom:8px;">Suvai Dry Fish Shop</h3>
+                <p style="color:var(--text-muted);margin-bottom:25px;">Owned and operated by Iqbal. Retail &amp; wholesale orders welcome.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon-wrap"><i class="fas fa-user-tie"></i></div>
+                        <div class="contact-info-text">
+                            <span>Store Owner</span>
+                            <h4>Iqbal</h4>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-wrap"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-info-text">
+                            <span>Order Directly</span>
+                            <h4>+91 93614 80769</h4>
+                            <a href="tel:9361480769" class="contact-phone-link">📞 Tap to Call Now</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-info-text">
+                            <span>Shop Address</span>
+                            <h4>Gandhi Market Road</h4>
+                            <p>Near Pollachi Railway Bus Stop,<br>Pollachi, Coimbatore — 642006</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-wrap"><i class="fas fa-clock"></i></div>
+                        <div class="contact-info-text">
+                            <span>Opening Hours</span>
+                            <h4>8:00 AM — 9:00 PM</h4>
+                            <p>Open all days including Sundays</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-social-row">
+                <a href="https://wa.me/919361480769" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="map-card glass-card">
+            <div class="map-placeholder">
+                <div class="map-marker-glow">
+                    <div class="marker-circle-outer"></div>
+                    <div class="marker-circle-inner"><i class="fas fa-store"></i></div>
+                </div>
+                <h4>Suvai Dry Fish</h4>
+                <p>Gandhi Market Road, Near Pollachi Railway Bus Stop, Pollachi, Coimbatore, Tamil Nadu 642006</p>
+                <a href="https://maps.google.com/?q=Gandhi+Market+Road+near+Pollachi+Railway+Bus+Stop+Pollachi+Coimbatore" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ CART OVERLAY + DRAWER ═══ -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+        <h3 class="cart-header-title"><i class="fas fa-shopping-basket"></i> Your Basket</h3>
+        <button class="cart-close-btn" onclick="toggleCart()" aria-label="Close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items-list" id="cart-items-list"></div>
+    <div class="cart-footer">
+        <div class="cart-summary-row">
+            <span class="cart-summary-label">Estimated Total:</span>
+            <span class="cart-total-amount" id="cart-total-amount">₹0</span>
+        </div>
+        <div id="checkout-form-container" class="hidden">
+            <p class="checkout-form-title">Your Delivery Details</p>
+            <form onsubmit="processCheckout(event)" class="checkout-form">
+                <input type="text" id="customer-name" class="form-input-cart" placeholder="Your Full Name" required>
+                <input type="tel" id="customer-phone" class="form-input-cart" placeholder="Phone Number" required>
+                <textarea id="customer-address" class="form-input-cart textarea-cart" placeholder="Full Delivery Address with Pincode" required></textarea>
+                <button type="submit" class="btn btn-full checkout-btn">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="brand-logo" style="margin-bottom:20px;">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#fg)"/><path d="M6 16C9 12 14 11 19 13C22 11.5 24.5 12.5 26 14C24.5 15.5 22 16.5 19 15C14 17 9 16 6 16Z" stroke="white" stroke-width="2"/><defs><linearGradient id="fg" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#0f172a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs></svg>
+                <span class="brand-name-text">Suvai<span> Dry Fish</span></span>
+            </div>
+            <p class="footer-desc">Traditional seafood curing, serving quality, taste, and hygiene in every package. Sun-dried natively under the supervision of Iqbal, Pollachi.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#promo">Featured Items</a></li>
+                <li><a href="#catalog">Shop Catalog</a></li>
+                <li><a href="#about">Our Process</a></li>
+                <li><a href="#contact">Contact Store</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Shop Details</h4>
+            <ul class="footer-info-list">
+                <li><i class="fas fa-map-marker-alt"></i><span>Gandhi Market Road, Near Pollachi Railway Bus Stop, Pollachi, Coimbatore — 642006</span></li>
+                <li><i class="fas fa-phone-alt"></i><span>+91 93614 80769 (Iqbal)</span></li>
+                <li><i class="fas fa-clock"></i><span>Open Daily: 8:00 AM — 9:00 PM</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom" style="width:90%;max-width:1280px;margin:0 auto;">
+        <p>&copy; 2026 Suvai Dry Fish, Pollachi. All Rights Reserved. Chemical-Free, Organic, Traditional Curing.</p>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+    // Slider
+    let slideIndex = 0, slideTimer;
+    function initSlider() { showSlide(0); resetSlideTimer(); }
+    function moveSlide(n) { showSlide(slideIndex += n); resetSlideTimer(); }
+    function setSlide(n) { showSlide(slideIndex = n); resetSlideTimer(); }
+    function showSlide(n) {
+        const slides = document.getElementsByClassName("promo-slide");
+        const dots = document.getElementsByClassName("slider-dot");
+        if (!slides.length) return;
+        if (n >= slides.length) slideIndex = 0;
+        if (n < 0) slideIndex = slides.length - 1;
+        [...slides].forEach(s => s.classList.remove("active"));
+        [...dots].forEach(d => d.classList.remove("active"));
+        slides[slideIndex].classList.add("active");
+        if (dots[slideIndex]) dots[slideIndex].classList.add("active");
+    }
+    function resetSlideTimer() { clearInterval(slideTimer); slideTimer = setInterval(() => moveSlide(1), 6000); }
+    window.addEventListener("load", initSlider);
+
+    // Mobile nav
+    const mobileBtn = document.getElementById("mobile-menu-btn");
+    const navLinks = document.querySelector(".nav-links");
+    if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("mobile-active");
+            const icon = mobileBtn.querySelector("i");
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-times");
+        });
+        document.querySelectorAll(".nav-link").forEach(l => l.addEventListener("click", () => {
+            navLinks.classList.remove("mobile-active");
+            const icon = mobileBtn.querySelector("i");
+            icon.classList.add("fa-bars");
+            icon.classList.remove("fa-times");
+        }));
+    }
+
+    // Active nav on scroll
+    window.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section[id]");
+        let current = "";
+        sections.forEach(s => { if (window.scrollY >= s.offsetTop - 150) current = s.id; });
+        document.querySelectorAll(".nav-link").forEach(l => {
+            l.classList.remove("active");
+            if (l.getAttribute("href") === "#" + current) l.classList.add("active");
+        });
+    });
+</script>
+</body>
+</html>
